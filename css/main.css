@@ -1,0 +1,173 @@
+body{
+  margin:0px auto;
+  text-align: center;
+  background:#FFDBAD;
+}
+
+main{
+  width:100%;
+  margin:25px 0px;
+}
+
+#main-container{
+  margin:0px auto;
+  width:95%;
+}
+
+header{
+  margin:0px auto;
+  height:100px;
+  background: url('/image/bg01.jpg');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px 0px;
+  background-size: cover;
+  /* background: green; */
+}
+
+nav{
+  margin:0px auto;
+}
+
+.title-bg02{
+  height: 40px;
+  width: 180px;
+  color:white;
+  padding: 10px 40px 0px 0px;
+  background: url('/image/title01.jpg');
+  background-position: center;
+}
+
+.icon-default{
+  width:30px;
+  height:30px;
+}
+.icon-50{
+  width:50px;
+  height:50px;
+}
+
+.tools-bar{
+  margin:0px 20px;
+}
+
+.float-left>li{
+  float:left;
+  clear:both;
+}
+
+.right-side{
+  display:none;
+}
+
+.left-side{
+  display:none;
+}
+
+.right-side>li,.left-side>li{
+  margin:0px 20px;
+}
+
+.min-show{
+  display:block;
+}
+
+.min-hide{
+  display:none;
+}
+
+#main-content, #sub-content{
+  background:white;
+}
+
+#sub-content{
+  border-radius: 0px 10px;
+}
+
+#main-content>.row>.col,.col-6{
+  margin:20px auto;
+}
+
+#center-content{
+  flex: 0 0 100%;
+  max-width:100%;
+  word-break: break-all;
+}
+
+#news-content>thead{
+  background:black;
+  color:white;
+}
+#news-content>thead>tr>td{
+  text-align: center;
+  border: 2px solid white;
+}
+
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left:5%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  /* text-align: left; */
+  background-color: #000;
+  color: white;
+}
+
+
+.copyright, .copyright>a{
+  font-size:12px;
+  opacity: 0.5;
+  color:black;
+}
+.copyright>a{
+  font-weight: bold;
+}
+
+@media only screen and (min-width:800px){
+  #center-content{
+    max-width:100%;
+    flex: 0 0 68%;
+  }
+  .left-side{
+    display: block;
+  }
+  .min-hide{
+    display:block;
+  }
+  .min-show{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:1280px){
+  .right-side{
+    display: block;
+  }
+  #customers{
+    width: 100%;
+    margin-left:0%;
+  }
+  #center-content{
+    max-width:50%;
+    flex: 0 0 50%;
+  }
+  #main-container{width:80%;}
+}
+
+/* screensiz.es */
